@@ -1,0 +1,23 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <h1>Settings</h1>
+    <form ng-submit="saveTimeData()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">LastDay</span>
+          <input type="date" ng-model="timeData.lastday">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Holidays</span>
+          <input type="text" ng-model="timeData.holidays">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Special days</span>
+          <input type="text" ng-model="timeData.specialDays">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Save</button>
+        </label>
+      </div>
+  </ion-content>
+</ion-view>
